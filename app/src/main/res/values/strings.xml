@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lugares</string>
+    <string name="tv_correo">Correo</string>
+    <string name="tv_clave">Password</string>
 </resources>
