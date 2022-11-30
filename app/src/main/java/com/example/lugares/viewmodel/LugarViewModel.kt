@@ -19,16 +19,26 @@ class LugarViewModel(application: Application): AndroidViewModel(application){
         getAllData = repository.getAllData
     }
 
-    fun addLugar (lugar: Lugar){
-        viewModelScope.launch(Dispatchers.IO){ repository.addLugar(lugar)}
+    //fun addLugar (lugar: Lugar){
+    //    viewModelScope.launch(Dispatchers.IO){ repository.addLugar(lugar)}
+    //}
+    //
+    //fun updateLugar (lugar: Lugar){
+    //    viewModelScope.launch(Dispatchers.IO){ repository.updateLugar(lugar)}
+    //}
+    //
+    //fun deleteLugar (lugar: Lugar){
+    //    viewModelScope.launch(Dispatchers.IO){ repository.deleteLugar(lugar)}
+    //}
+
+    fun saveLugar(lugar: Lugar) {
+        viewModelScope.launch { repository.saveLugar(lugar) }
     }
 
-    fun updateLugar (lugar: Lugar){
-        viewModelScope.launch(Dispatchers.IO){ repository.updateLugar(lugar)}
+    fun deleteLugar(lugar: Lugar) {
+        viewModelScope.launch { repository.deleteLugar(lugar)}
     }
 
-    fun deleteLugar (lugar: Lugar){
-        viewModelScope.launch(Dispatchers.IO){ repository.deleteLugar(lugar)}
-    }
+    
 
 }

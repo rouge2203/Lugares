@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".AddLugarFragment" >
+    tools:context=".ui.lugar.AddLugarFragment" >
 
     <EditText
         android:id="@+id/et_nombre"
@@ -14,7 +14,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/msg_nombre" />
+        android:hint="@string/msg_nombre" />
 
     <EditText
         android:id="@+id/et_correo"
@@ -23,16 +23,16 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:text="@string/msg_correo" />
+        android:hint="@string/msg_correo" />
 
     <EditText
         android:id="@+id/et_telefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:minHeight="48dp"
-        android:text="@string/msg_telefono" />
+        android:hint="@string/msg_telefono" />
 
     <EditText
         android:id="@+id/et_web"
@@ -41,7 +41,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/msg_web" />
+        android:hint="@string/msg_web" />
 
     <Button
         android:id="@+id/bt_agregar"

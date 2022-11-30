@@ -17,18 +17,8 @@ data class Lugar(
     val nombre: String,
     @ColumnInfo(name="correo")
     val correo: String?,
-    @ColumnInfo(name="telefono")
-    val telefono: String?,
     @ColumnInfo(name="web")
-    val web: String,
-    @ColumnInfo(name="latitud")
-    val latitud: Double?,
-    @ColumnInfo(name="longitud")
-    val longitud: Double?,
-    @ColumnInfo(name="altura")
-    val altura: Double?,
-    @ColumnInfo(name="rutaAudio")
-    val rutaAudio: String?,
-    @ColumnInfo(name="rutaImagen")
-    val rutaImagen: String?,
+    val web: String?,
+    @ColumnInfo(name="telefono")
+    val telefono: String
 ) : Parcelable
