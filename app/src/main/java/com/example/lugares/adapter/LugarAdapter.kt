@@ -42,5 +42,5 @@ class LugarAdapter: RecyclerView.Adapter<LugarAdapter.LugarViewHolder>() {
     override fun getItemCount(): Int{
         return listarLugares.size
     }
-
+//listado de lugara p;ciommo
 }
