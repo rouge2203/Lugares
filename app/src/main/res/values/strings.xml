@@ -23,7 +23,11 @@
     <string name="msg_web">Sitio Web</string>
     <string name="bt_agregar">Agregar</string>
     <string name="msg_lugar_added">Lugar agregado</string>
+    <string name="msg_lugar_updated">Lugar actualizado</string>
     <string name="msg_data">Faltan datos!!</string>
     <string name="fb_agregar">Agregar Lista</string>
+
+    <string name="bt_update">Actualizar</string>
+
 
 </resources>
