@@ -49,4 +49,29 @@
         android:layout_height="wrap_content"
         android:text="@string/bt_update" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btPlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/msgEscucharAudio"
+            android:src="@drawable/ic_play" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="@string/msg_imagen"
+        android:scaleType="centerInside"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+
 </LinearLayout>

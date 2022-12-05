@@ -33,6 +33,8 @@
     <string name="si">SÍ</string>
     <string name="no">NO</string>
     <string name="seguroBorrar">¿Deseas borrar </string>
+    <string name="todo">TO DO </string>
+    <string name="msgEscucharAudio">Audio</string>
 
 
 </resources>
