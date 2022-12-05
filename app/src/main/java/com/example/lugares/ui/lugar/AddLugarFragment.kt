@@ -34,14 +34,14 @@ class AddLugarFragment : Fragment() {
     //Efectivamente hace el registro del lugar en la base de datos
     private fun addLugar() {
         val nombre=binding.etNombre.text.toString()
-        val correo=binding.etCorreo.text.toString()
-        val telefono=binding.etTelefono.text.toString()
-        val web=binding.etWeb.text.toString()
-
 
         if (nombre.isNotEmpty()) {   //Al menos tenemos un nombre
-            val lugar = Lugar(0,nombre,correo,web,telefono)
-            lugarViewModel.saveLugar(lugar)
+            val correo=binding.etCorreo.text.toString()
+            val telefono=binding.etTelefono.text.toString()
+            val web=binding.etWeb.text.toString()
+
+            val lugar = Lugar("",nombre,correo,web,telefono)
+            lugarViewModel.addLugar(lugar)
             Toast.makeText(requireContext(),getString(R.string.msg_lugar_added),
                 Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_addLugarFragment_to_nav_lugar)
